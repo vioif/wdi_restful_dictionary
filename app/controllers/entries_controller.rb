@@ -16,5 +16,10 @@ class EntriesController < ApplicationController
     redirect_to entries_url
   end
 
+  def edit
+    render :edit
+     redirect_to entry_url(params[:id])
+  end
+
 
 end
